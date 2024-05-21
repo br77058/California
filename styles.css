@@ -1,0 +1,277 @@
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./images/4kpalms.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.241
+  ); /* Adjust the alpha value to control darkness */
+}
+
+.nav-container {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.391);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.btn-city {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a.city-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a.city-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+}
+a.city-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+.title {
+  width: 100%;
+  height: 15rem;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#location-name {
+  font-weight: 100;
+  color: white;
+  font-size: 7rem;
+  filter: drop-shadow(-10px 15px 10px #000000b9);
+}
+
+.article {
+  width: 60rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(245, 107, 134, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.text {
+  flex: 1;
+  color: white;
+}
+
+.main-body {
+  line-height: 1.5;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: 20%;
+  float: left;
+  border: 1px solid white;
+  margin-left: 2rem;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+
+ul.text {
+  list-style-type: circle;
+}
+
+li.text {
+  padding-top: 2rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Ordered Rank / List */
+.rank {
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rank-title {
+  color: white;
+  height: 5rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.ordered-list {
+  list-style: decimal;
+}
+
+.ordered-list-item {
+  color: white;
+  margin-bottom: 3rem;
+}
+/* Sources */
+
+a.source-link,
+input,
+#question {
+  color: white;
+}
+
+/* TABLE */
+table {
+  width: 60rem;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 67, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+th,
+td {
+  background: rgba(255, 255, 255, 0.049);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 67, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px;
+  text-align: center;
+  color: white;
+  width: 25rem;
+}
+th {
+  background-color: #f2f2f295;
+}
+
+/* Image */
+.image {
+  z-index: 1;
+  margin-bottom: 1rem;
+  width: 25rem;
+}
+/* Form */
+
+form {
+  width: 25rem;
+  height: 32rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 67, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2rem;
+  z-index: 1;
+}
+
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 8px; /* Add some space between labels */
+  color: white;
+}
+
+/* Style for form inputs and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Make inputs and textareas fill their parent container */
+  padding: 8px; /* Add padding to inputs and textareas */
+  margin-bottom: 16px; /* Add some space between inputs and textareas */
+  border: 1px solid #ccc; /* Add a border to inputs and textareas */
+  border-radius: 4px; /* Rounded corners for inputs and textareas */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.678);
+}
+#form-title-container {
+  margin-bottom: 2rem;
+}
+#form-title {
+  color: white;
+  font-weight: 500;
+}
+
+/* Style for form submit button (if present) */
+button[type="submit"] {
+  width: 100%; /* Make submit button fill its parent container */
+  padding: 10px; /* Add padding to submit button */
+  background-color: #a83a54; /* Background color for the submit button */
+  color: #fff; /* Text color for the submit button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for the submit button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for form submit button on hover */
+button[type="submit"]:hover {
+  background-color: #92364c; /* Background color for the submit button */
+}
