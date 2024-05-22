@@ -185,4 +185,5 @@ input,
 
 .img {
   margin-bottom: 1rem;
+  z-index: 1;
 }
